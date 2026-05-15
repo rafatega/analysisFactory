@@ -1,0 +1,9 @@
+﻿{
+  "markdown-pdf.styles": [
+    "app/insights-x-scraping/pdf.css"
+  ],
+  "markdown-pdf.includeDefaultStyles": true,
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.printBackground": true,
+  "markdown-pdf.pageBreak": "div.page-break"
+}
