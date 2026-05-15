@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+from pathlib import Path
 import unicodedata
 
 import altair as alt
@@ -8,9 +10,8 @@ import streamlit as st
 
 # streamlit run app/insights-x-scraping/insights.py
 
-DATA_PATH = (
-    r"C:\Users\rafaeltegazzini\Documents\Projetos\analysisFactory\app\insights-x-scraping\Scrape99.xlsx"
-)
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = Path(os.environ.get("INSIGHTS_DATA_PATH", BASE_DIR / "Scrape99.xlsx"))
 BRAND_COLOR = "#ffdd00"
 
 
